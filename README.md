@@ -1,6 +1,6 @@
 ## Calculator
 
-This is a port of the Python implementation outlined in Ruslan's Blog [Let's Build A Simple Interpreter](http://ruslanspivak.com/lsbasi-part1/).
+This is a Go port of the Python implementation outlined in Ruslan's Blog [Let's Build A Simple Interpreter](http://ruslanspivak.com/lsbasi-part1/).
 
 ### Usage
 
