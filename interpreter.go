@@ -57,11 +57,12 @@ func (i *Interpreter) Term() int {
 	}
 
 	return result
-
 }
 
 func (i *Interpreter) Expression() (int) {
-
+	// expr   : term ((PLUS | MINUS) term)*
+	// term   : factor ((MUL | DIV) factor)*
+	// factor : INTEGER | LPAREN expr RPAREN
 	result := i.Term()
 	for i.currentToken.ttype == "PLUS" || i.currentToken.ttype == "MINUS" {
 		token := i.currentToken
